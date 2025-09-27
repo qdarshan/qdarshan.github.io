@@ -1,95 +1,95 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <style>
-      body {
-        background-color: #040707;
-        color: red;
-        font-family: Arial, sans-serif;
-        margin: 0;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        height: 100px;
-      }
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <style>
+            body {
+                background-color: #040707;
+                color: red;
+                font-family: Arial, sans-serif;
+                margin: 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                height: 100px;
+            }
 
-      main {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
+            main {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
 
-      #output-container {
-        height: 100%;
-      }
+            #output-container {
+                height: 100%;
+            }
 
-      #output {
-        background-color: #040707;
-        color: #94bae5;
-        border-radius: 8px;
-        white-space: pre;
-        word-wrap: break-word;
-        font-family: monospace;
-        font-size: 2.5px;
-        line-height: 1.2;
-        text-align: center;
-        overflow-x: auto;
-      }
+            #output {
+                background-color: #040707;
+                color: #94bae5;
+                border-radius: 8px;
+                white-space: pre;
+                word-wrap: break-word;
+                font-family: monospace;
+                font-size: 2.5px;
+                line-height: 1.2;
+                text-align: center;
+                overflow-x: auto;
+            }
 
-      @media (max-width: 768px) {
-        main {
-          padding: 10px;
-        }
+            @media (max-width: 768px) {
+                main {
+                    padding: 10px;
+                }
 
-        #output {
-          font-size: 1.5px;
-        }
+                #output {
+                    font-size: 1.5px;
+                }
 
-        #output-container {
-          overflow-x: auto;
-          -webkit-overflow-scrolling: touch; /* For smooth scrolling on iOS */
-        }
-      }
+                #output-container {
+                    overflow-x: auto;
+                    -webkit-overflow-scrolling: touch; /* For smooth scrolling on iOS */
+                }
+            }
 
-      .flow {
-        background: linear-gradient(
-          -45deg,
-          #a9a9a9 33%,
-          #008282 66%,
-          #001f00 100%
-        );
-        /* background: linear-gradient(
+            .flow {
+                background: linear-gradient(
+                    -45deg,
+                    #a9a9a9 33%,
+                    #008282 66%,
+                    #001f00 100%
+                );
+                /* background: linear-gradient(
         -45deg,
         #94bae5 33%,
         #faae7b 66%,
         #f27a7a 100%
       ); */
-        background-size: 400% 400%;
-        background-clip: text;
-        color: transparent;
-        animation: flowing 5s ease-in infinite;
-      }
+                background-size: 400% 400%;
+                background-clip: text;
+                color: transparent;
+                animation: flowing 5s ease-in infinite;
+            }
 
-      @keyframes flowing {
-        0% {
-          background-position: 0% 50%;
-        }
-        50% {
-          background-position: 100% 50%;
-        }
-        100% {
-          background-position: 0% 50%;
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <main>
-      <div id="output-container">
-        <div id="output">
-          <pre class="flow">
+            @keyframes flowing {
+                0% {
+                    background-position: 0% 50%;
+                }
+                50% {
+                    background-position: 100% 50%;
+                }
+                100% {
+                    background-position: 0% 50%;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <div id="output-container">
+                <div id="output">
+                    <pre class="flow">
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
                 | MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM |
                 | MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM |
@@ -342,9 +342,9 @@
                 | MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM |
                 | MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM |
                 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</pre
-          >
-        </div>
-      </div>
-    </main>
-  </body>
+                    >
+                </div>
+            </div>
+        </main>
+    </body>
 </html>

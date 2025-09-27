@@ -1,181 +1,181 @@
 body {
-  background-color: #040707;
-  color: #94bae5;
-  cursor: pointer;
-  font-family: "Noto Sans Mono", monospace;
-  min-height: 100vh;
+    background-color: #040707;
+    color: #94bae5;
+    cursor: pointer;
+    font-family: "Noto Sans Mono", monospace;
+    min-height: 100vh;
 }
 
 .font-protest {
-  font-family: "Protest Guerrilla", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
+    font-family: "Protest Guerrilla", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 
 .font-noto {
-  font-family: "Noto Sans Mono", monospace;
-  font-optical-sizing: auto;
-  font-style: normal;
+    font-family: "Noto Sans Mono", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 
 .profile-header {
-  padding: 2rem 0;
-  border-bottom: 2px solid #94bae5;
-  margin-bottom: 2rem;
+    padding: 2rem 0;
+    border-bottom: 2px solid #94bae5;
+    margin-bottom: 2rem;
 }
 
 .name-container {
-  position: relative;
-  display: inline-block;
-  margin-bottom: 1rem;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 1rem;
 }
 
 .name {
-  text-align: center;
-  font-size: 6rem;
-  transition: all 0.3s ease-in-out;
-  margin-bottom: 0.5rem;
+    text-align: center;
+    font-size: 6rem;
+    transition: all 0.3s ease-in-out;
+    margin-bottom: 0.5rem;
 }
 
 .name:hover {
-  background: linear-gradient(-45deg, #a9a9a9 33%, #008282 66%, #001f00 100%);
-  background-size: 400% 400%;
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  animation: flowing 5s ease-in infinite;
+    background: linear-gradient(-45deg, #a9a9a9 33%, #008282 66%, #001f00 100%);
+    background-size: 400% 400%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: flowing 5s ease-in infinite;
 }
 
 .username {
-  position: absolute;
-  right: 0;
-  bottom: -5px;
-  font-size: 1.2rem;
-  color: gray;
-  font-weight: bold;
-  margin: 0;
-  transition: color 0.3s ease;
+    position: absolute;
+    right: 0;
+    bottom: -5px;
+    font-size: 1.2rem;
+    color: gray;
+    font-weight: bold;
+    margin: 0;
+    transition: color 0.3s ease;
 }
 
 .username:hover {
-  color: #0974f1;
+    color: #0974f1;
 }
 
 .projects-section {
-  margin-top: 2rem;
+    margin-top: 2rem;
 }
 
 .section-title {
-  font-size: 1.2rem;
-  color: #94bae5;
-  margin-bottom: 1rem;
-  font-weight: bold;
-  position: relative;
-  font-family: "Noto Sans Mono", monospace;
+    font-size: 1.2rem;
+    color: #94bae5;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    position: relative;
+    font-family: "Noto Sans Mono", monospace;
 }
 
 .section-title::after {
-  content: "";
-  position: absolute;
-  bottom: -5px;
-  left: 0;
-  width: 50px;
-  height: 2px;
-  background: linear-gradient(90deg, #008282, transparent);
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: linear-gradient(90deg, #008282, transparent);
 }
 
 .projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
 }
 
 .project-card {
-  background: rgba(148, 186, 229, 0.05);
-  border-radius: 5px;
-  padding: 1.2rem;
-  transition: all 0.3s ease;
-  position: relative;
-  overflow: hidden;
-  text-decoration: none;
-  color: inherit;
-  display: block;
+    background: rgba(148, 186, 229, 0.05);
+    border-radius: 5px;
+    padding: 1.2rem;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    display: block;
 }
 
 .project-card:hover {
-  background: rgba(148, 186, 229, 0.1);
-  border-color: #94bae5;
-  transform: translateY(-5px);
-  text-decoration: none;
-  color: inherit;
+    background: rgba(148, 186, 229, 0.1);
+    border-color: #94bae5;
+    transform: translateY(-5px);
+    text-decoration: none;
+    color: inherit;
 }
 
 .project-card:hover::before {
-  transform: scaleX(1);
+    transform: scaleX(1);
 }
 
 .project-name {
-  font-weight: bold;
-  font-size: 1.1rem;
-  margin-bottom: 0.5rem;
-  color: #94bae5;
-  text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: #94bae5;
+    text-decoration: none;
 }
 
 .project-name:hover {
-  color: #0974f1;
+    color: #0974f1;
 }
 
 .project-description {
-  font-size: 0.8rem;
-  color: #6b8db5;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
+    font-size: 0.8rem;
+    color: #6b8db5;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
 .project-card:hover .project-name {
-  color: #0974f1;
+    color: #0974f1;
 }
 
 @keyframes flowing {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 @media only screen and (max-width: 600px) {
-  .name {
-    font-size: 3rem;
-  }
+    .name {
+        font-size: 3rem;
+    }
 
-  .username {
-    font-size: 1rem;
-    position: static;
-    text-align: center;
-    margin-top: 0.5rem;
-  }
+    .username {
+        font-size: 1rem;
+        position: static;
+        text-align: center;
+        margin-top: 0.5rem;
+    }
 
-  .name-container {
-    text-align: center;
-  }
+    .name-container {
+        text-align: center;
+    }
 
-  .projects-grid {
-    grid-template-columns: 1fr;
-  }
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
 
-  .programming-languages {
-    justify-content: center;
-  }
+    .programming-languages {
+        justify-content: center;
+    }
 }
 
 @media only screen and (max-width: 400px) {
-  .name {
-    font-size: 2.5rem;
-  }
+    .name {
+        font-size: 2.5rem;
+    }
 }
